@@ -10,6 +10,7 @@ RUN --mount=type=secret,id=zenodo_token,env=zenodo_token \
     curl -v -H "Authorization: Bearer ${zenodo_token}" -o /data/adipo.h5ad https://zenodo.org/api/records/14743353/files/adipo.h5ad/content && \
     curl -v -H "Authorization: Bearer ${zenodo_token}" -o /data/macro.h5ad https://zenodo.org/api/records/14743353/files/macro.h5ad/content
 
+
 # Expose different ports for different datasets
 EXPOSE 8080 8081 8082
 
