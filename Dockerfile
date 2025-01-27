@@ -10,4 +10,4 @@ ADD adipo.h5ad /data/adipo.h5ad
 ADD ZenodoURL.org/bla/macro.h5ad /data/macro.h5ad
 
 # cellxgene launch /data/all_final_real_population.h5ad
-CMD ["cellxgene", "launch", "/data/all_final_real_population.h5ad"]
+CMD cellxgene launch --host 0.0.0.0 --port 80 /data/all_final_real_population.h5ad
