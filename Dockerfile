@@ -5,9 +5,9 @@ LABEL org.opencontainers.image.authors="Amirhossein"
 RUN mkdir /data && \
     chmod 777 /data
 
-ADD https://zenodo.org/records/14781310/files/all_final.h5ad /data/all.h5ad
-ADD https://zenodo.org/records/14781310/files/adipo_final.h5ad /data/adipo.h5ad
-ADD https://zenodo.org/records/14781310/files/macro_final.h5ad /data/macro.h5ad
+ADD https://zenodo.org/records/14900774/files/all_final.h5ad /data/all.h5ad
+ADD https://zenodo.org/records/14900774/files/adipo_final.h5ad /data/adipo.h5ad
+ADD https://zenodo.org/records/14900774/files/macro_final.h5ad /data/macro.h5ad
 
 # Expose different ports for different datasets
 EXPOSE 8080 8081 8082
