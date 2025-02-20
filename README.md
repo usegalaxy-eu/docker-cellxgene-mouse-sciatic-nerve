@@ -8,11 +8,7 @@ This single-nuclei RNAseq data includes the femoral section of the sciatic nerve
 You can start the container outside of Galaxy with:
 
 ```bash
-docker run -i -t --rm -p 8080:8080 -p 8081:8081 -p 8082:8082 https://quay.io/repository/bgruening/cellxgene-mouse-sciatic-nerve  bash
+docker run --init -it --rm -p 8080:8080 -p 8081:8081 -p 8082:8082 quay.io/bgruening/cellxgene-mouse-sciatic-nerve:1.2.0
 ```
 
-Once you are in the container you can start the application with:
-
-```bash
-/init
-```
+Once the container started, you can acces data via http://0.0.0.0:8080, http://0.0.0.0:8081, http://0.0.0.0:8082 in your browser
